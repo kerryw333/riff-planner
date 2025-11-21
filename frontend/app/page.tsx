@@ -9,7 +9,8 @@ interface ChatEntry {
   references?: { title?: string | null; url?: string | null; snippet?: string | null }[];
 }
 
-const API_ROUTE = process.env.NEXT_PUBLIC_API_BASE_URL || "/api/generate";
+const backendBase = process.env.NEXT_PUBLIC_BACKEND_URL?.replace(/\/$/, "");
+const API_ROUTE = backendBase ? `${backendBase}/generate` : "/api/generate";
 
 export default function Home() {
   const [message, setMessage] = useState("");
