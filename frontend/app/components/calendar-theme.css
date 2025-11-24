@@ -1,0 +1,52 @@
+/* Calendar container */
+.react-calendar {
+  background: #FFF9E2 !important;
+  border: 1px solid #EBECCC !important;
+  border-radius: 12px;
+  padding: 8px;
+}
+
+/* Calendar navigation */
+.react-calendar__navigation button {
+  color: #3A3A3A !important;
+  font-weight: 600;
+}
+
+/* Weekdays */
+.react-calendar__month-view__weekdays__weekday {
+  color: #3A3A3A !important;
+  font-weight: 500;
+}
+
+/* Days */
+.react-calendar__tile {
+  background: transparent !important;
+  border-radius: 8px !important;
+  transition: 0.2s;
+  color: #3A3A3A !important;
+}
+
+/* Hover */
+.react-calendar__tile:hover {
+  background: #FEECD0 !important;
+}
+
+/* Active selection (single date) */
+.react-calendar__tile--active {
+  background: #DCA278 !important;
+  color: white !important;
+}
+
+/* Range selection start/end */
+.react-calendar__tile--rangeStart,
+.react-calendar__tile--rangeEnd {
+  background: #DCA278 !important;
+  color: white !important;
+  border-radius: 8px !important;
+}
+
+/* Inside range (middle days) */
+.react-calendar__tile--range {
+  background: #CDD4B1 !important;
+  color: #3A3A3A !important;
+}
