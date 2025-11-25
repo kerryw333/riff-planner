@@ -48,7 +48,7 @@ riff_planner/
 │   └── src/
 ├── requirements.txt
 └── README.md
-```bash
+```
 
 ### Role
 The agent acts as the **Riff Planner**, an enthusiastic and efficient itinerary designer.
