@@ -4,7 +4,7 @@ Riff Planner is a multi-agent itinerary generation system built using the Google
 
 This project demonstrates how AI agents can transform vague lifestyle preferences into structured, validated itineraries powered by real-time Google Search results.
 
----
+
 
 ## Problem Statement
 
@@ -18,7 +18,6 @@ Manual planning involves:
 
 This process is slow and overwhelming.
 
----
 
 ## Solution Statement
 
@@ -31,9 +30,22 @@ Riff Planner streamlines the experience by:
 
 The final output is a structured JSON plan that apps or frontend clients can render directly.
 
----
 
 ## System Instruction (Core Logic)
+riff_planner/
+    agent.py                    # Main interactive agent
+    schema.py                   # SCHEDULE_SCHEMA definition
+    sub_agents/
+        planner.py              # Planning strategist
+        discovery.py            # Google search agent
+        scheduler.py            # Itinerary builder
+        validator.py            # LoopAgent validation
+tests/
+    test_agent.py               # Integration tests
+frontend/
+    ... (React UI, optional)
+requirements.txt
+README.md
 
 ### Role
 The agent acts as the **Riff Planner**, an enthusiastic and efficient itinerary designer.
@@ -51,3 +63,45 @@ Before using tools, the agent must outline its reasoning:
 2. Strategy: generate 2–3 precise Google Search queries  
 3. Synthesize: build the itinerary timeline  
 4. Output: prepare final JSON matching `SCHED
+   
+
+## Value Statement
+
+Riff Planner reduces hours of manual weekend planning into seconds. It produces:
+- Real, grounded recommendations
+- Clear schedules
+- Functional links for immediate use
+
+This helps users explore new activities, simplify decision-making, and enjoy more fulfilling weekends.
+
+Future extensions may include:
+- Trend detection from social platforms
+- Budget optimization logic
+- Group itinerary planning
+
+
+## Installation
+
+Requires Python **3.11.x**
+
+### Create Virtual Environment
+python -m venv venv
+source venv/bin/activate
+
+
+### Install Dependencies
+pip install -r requirements.txt
+
+
+## Running Riff Planner in ADK Web Mode
+Start the ADK Web interface:
+adk web
+
+Run integration tests:
+python -m tests.test_agent
+
+## Conclusion
+Riff Planner demonstrates how multi-agent systems can coordinate planning, discovery, scheduling, and validation to create structured, scalable AI itinerary solutions. It is suitable for weekend planners, lifestyle apps, travel assistants, and local discovery tools.
+
+
+
