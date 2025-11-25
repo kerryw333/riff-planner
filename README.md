@@ -32,20 +32,23 @@ The final output is a structured JSON plan that apps or frontend clients can ren
 
 
 ## System Instruction (Core Logic)
+```bash
 riff_planner/
-    agent.py                    # Main interactive agent
-    schema.py                   # SCHEDULE_SCHEMA definition
-    sub_agents/
-        planner.py              # Planning strategist
-        discovery.py            # Google search agent
-        scheduler.py            # Itinerary builder
-        validator.py            # LoopAgent validation
-tests/
-    test_agent.py               # Integration tests
-frontend/
-    ... (React UI, optional)
-requirements.txt
-README.md
+├── agent.py                  # Main interactive agent
+├── schema.py                 # SCHEDULE_SCHEMA definition
+├── sub_agents/               # All modular agents
+│   ├── planner.py            # Planning strategist
+│   ├── discovery.py          # Google Search agent
+│   ├── scheduler.py          # Itinerary builder
+│   └── validator.py          # JSON schema validator
+├── tests/
+│   └── test_agent.py         # Integration tests
+├── frontend/                 # Optional frontend (Next.js / React)
+│   ├── public/
+│   └── src/
+├── requirements.txt
+└── README.md
+
 
 ### Role
 The agent acts as the **Riff Planner**, an enthusiastic and efficient itinerary designer.
