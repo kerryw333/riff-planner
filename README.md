@@ -1,4 +1,5 @@
 # Riff Planner — AI-Powered Itinerary & Weekend Planning Agent
+<img width="1024" height="1024" alt="Gemini_Generated_Image_mh0nm0mh0nm0mh0n" src="https://github.com/user-attachments/assets/96605f83-05a8-4d46-bd48-f45fbc378766" />
 
 Riff Planner is a multi-agent itinerary generation system built using the Google Agent Development Kit (ADK). It automatically designs personalized weekend plans, day trips, and local experiences based on the user’s location, time window, budget, vibe, and food preferences.
 
